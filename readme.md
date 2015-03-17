@@ -12,6 +12,10 @@ all the images it thinks have faces in them.
 ##Usage:
 python facedetect.py some/directory 
 
+This program will go through all the images found under `some/directory` and look for any that 
+contain faces. If it finds one, it'll create a copy with face_ prepended to the file name.
+any interesting features will be highlighted by a red rectangle
+
 ##Detecting other things:
 I have enclosed sample haar aml definitions that were bundled with opencv. They have a 3 clause BSD license which can be seen here:
 [Here](http://opencv.org/license.html) to use them in this programme simple change the cv.load() function to use an XML file of your
